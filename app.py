@@ -3,8 +3,8 @@ import time
 
 # Configuración de la página
 st.set_page_config(
-    page_title="Invitación Especial",
-    page_icon="🌸",
+    page_title="Dia Especial",
+    page_icon="happy cum🥳",
     layout="centered",
     initial_sidebar_state="collapsed",
 )
@@ -61,18 +61,18 @@ st.markdown(
 )
 
 # Pantalla de carga
-with st.spinner("Cargando carta..."):
+with st.spinner("Cargando..."):
     time.sleep(3)  # Simula una carga de 3 segundos
 
 # Función para simular la escritura en vivo
-def typewriter(text, delay=0.2):
+def typewriter(text, delay=0.6):
     placeholder = st.empty()
     for i in range(len(text) + 1):
         placeholder.markdown(f"<div class='main-text'>{text[:i]}</div>", unsafe_allow_html=True)
         time.sleep(delay)
 
 # Texto principal
-main_text = "¿Quieres salir conmigo Isabellita?"
+main_text = "Feliz cumpleaños Isabellita, te quiero mucho❤️"
 
 # Escribir el texto principal
 typewriter(main_text)
