@@ -62,7 +62,7 @@ st.markdown(
 # 3. Música de YouTube (The Abyss - The Weeknd & Lana Del Rey)
 # Se muestra un reproductor pequeño para que ella pueda activar el sonido
 st.markdown("<div class='video-container'>", unsafe_allow_html=True)
-st.video("https://www.youtube.com/watch?v=S3ncfrQPpjs")
+st.video("https://youtu.be/Y5slGFIDyfc?si=aRhVasf_Z3QvLOVH")
 st.caption("dale plei para escuchar")
 st.markdown("</div>", unsafe_allow_html=True)
 
@@ -91,23 +91,17 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# 7. Fotos Decorativas (Tus capturas)
+# 7. Rosas decorativas
 st.markdown(
     """
-    <div style='position: relative; height: 250px; margin-top: 40px;'>
-        <img class="rose" src="https://i.ibb.co/zHsctgmG/Screenshot-20260115-231537-Spotify.jpg" 
-        style="top: 0%; left: 5%;">
-        
-        <img class="rose" src="https://i.ibb.co/BKjgVsRX/Screenshot-20260115-233328-Whats-App.jpg" 
-        style="top: 0%; right: 5%;">
-        
-        <img class="rose" src="https://www.21-draw.com/wp-content/uploads/2023/08/color-the-leaves-e1692607469362-1024x1020.jpg" 
-        style="bottom: 0%; left: 40%;">
+    <div style='position: relative; text-align: center; margin-top: 20px;'>
+        <img class="rose" src="https://i.ibb.co/zHsctgmG/Screenshot-20260115-231537-Spotify.jpg" style="top: 0%; left: 5%;">
+        <img class="rose" src="https://i.ibb.co/BKjgVsRX/Screenshot-20260115-233328-Whats-App.jpg" style="top: 0%; right: 5%;">
+        <img class="rose" src="https://www.21-draw.com/wp-content/uploads/2023/08/color-the-leaves-e1692607469362-1024x1020.jpg" style="top: 150px; left: 5%;">
     </div>
     """,
     unsafe_allow_html=True,
 )
-
 # 8. Mensajes en las esquinas
 st.markdown(
     """
