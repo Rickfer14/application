@@ -77,7 +77,7 @@ def typewriter(text, delay=0.1):
         placeholder.markdown(f"<div class='main-text'>{text[:i]}</div>", unsafe_allow_html=True)
         time.sleep(delay)
 
-main_text = "Feliz cumpleaños Isabellita, ya son 19, te quiero mucho, eres tú y ya❤️"
+main_text = "Feliz cumpleaños Isabellita, ya son 19, te quiero mucho, segundo año conociéndonos y han pasado volando. Eres increíble, gracias por ser ejemplo de superación y constancia, te amo❤️"
 typewriter(main_text)
 
 # 6. Imagen central (Sticker)
