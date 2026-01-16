@@ -12,7 +12,7 @@ st.set_page_config(
 # 2. Configuración de Música de YouTube (Oculta)
 # ID del video: l_NcVpR6DJo (Canción emotiva de cumpleaños)
 video_id = "l_NcVpR6DJo"
-youtube_url = f"https://www.youtube.com/embed/{video_id}?autoplay=1&loop=1&playlist={video_id}"
+youtube_url = f"https://youtu.be/S3ncfrQPpjs?si=Rt97v49sZv0RbHUY"
 
 st.markdown(
     f"""
