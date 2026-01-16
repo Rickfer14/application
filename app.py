@@ -3,7 +3,7 @@ import time
 
 # Configuración de la página
 st.set_page_config(
-    page_title="Dia Especial",
+    page_title="🥳❤️",
     page_icon="happy cum🥳",
     layout="centered",
     initial_sidebar_state="collapsed",
