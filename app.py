@@ -1,15 +1,29 @@
 import streamlit as st
 import time
 
-# Configuración de la página
+# 1. Configuración de la página
 st.set_page_config(
     page_title="🥳❤️",
-    page_icon="happy cum🥳",
+    page_icon="🎂", # Cambiado a emoji para mejor compatibilidad
     layout="centered",
     initial_sidebar_state="collapsed",
 )
 
-# Estilos CSS para el fondo rosado y detalles decorativos
+# 2. Configuración de Música de YouTube (Oculta)
+# ID del video: l_NcVpR6DJo (Canción emotiva de cumpleaños)
+video_id = "l_NcVpR6DJo"
+youtube_url = f"https://www.youtube.com/embed/{video_id}?autoplay=1&loop=1&playlist={video_id}"
+
+st.markdown(
+    f"""
+    <iframe width="0" height="0" src="{youtube_url}" 
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+    </iframe>
+    """,
+    unsafe_allow_html=True
+)
+
+# 3. Estilos CSS
 st.markdown(
     """
     <style>
@@ -21,15 +35,11 @@ st.markdown(
         background-image: url("https://www.transparenttextures.com/patterns/flowers.png"); /* Patrón de flores */
         background-size: cover;
     }
-    .loading {
-        font-size: 24px;
-        text-align: center;
-        margin-top: 20%;
-    }
     .main-text {
         font-size: 32px;
         text-align: center;
         margin-top: 20px;
+        opacity: 0;
         animation: fadeIn 2s forwards;
     }
     @keyframes fadeIn {
@@ -60,11 +70,11 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Pantalla de carga
-with st.spinner("Cargando..."):
-    time.sleep(3)  # Simula una carga de 3 segundos
+# 4. Pantalla de carga
+with st.spinner("Cargando sorpresa..."):
+    time.sleep(3)
 
-# Función para simular la escritura en vivo
+# 5. Función de escritura en vivo
 def typewriter(text, delay=0.1):
     placeholder = st.empty()
     for i in range(len(text) + 1):
@@ -74,10 +84,10 @@ def typewriter(text, delay=0.1):
 # Texto principal
 main_text = "Feliz cumpleaños Isabellita, ya son 19, te quiero mucho, eres tú y ya❤️"
 
-# Escribir el texto principal
+# Ejecutar escritura
 typewriter(main_text)
 
-# Insertar una imagen
+# 6. Imagen central
 st.markdown(
     """
     <div style='text-align: center; margin-top: 20px;'>
@@ -87,22 +97,19 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Dibujar tres rosas como imágenes alrededor del texto principal
+# 7. Rosas decorativas
 st.markdown(
     """
     <div style='position: relative; text-align: center; margin-top: 20px;'>
-        <!-- Rosa 1 (arriba a la izquierda) -->
-        <img class="rose" src="https://i.ibb.co/zHsctgmG/Screenshot-20260115-231537-Spotify.jpg" alt="Rosa 1" style="top: 10%; left: 10%; width: 100px; height: 100px;">
-        <!-- Rosa 2 (arriba a la derecha) -->
-        <img class="rose" src="https://i.ibb.co/BKjgVsRX/Screenshot-20260115-233328-Whats-App.jpg" alt="Rosa 2" style="top: 10%; right: 10%; width: 100px; height: 100px;">
-        <!-- Rosa 3 (abajo a la izquierda) -->
-        <img class="rose" src="https://www.21-draw.com/wp-content/uploads/2023/08/color-the-leaves-e1692607469362-1024x1020.jpg" alt="Rosa 3" style="bottom: 10%; left: 10%; width: 100px; height: 100px;">
+        <img class="rose" src="https://i.ibb.co/zHsctgmG/Screenshot-20260115-231537-Spotify.jpg" style="top: 10%; left: 10%;">
+        <img class="rose" src="https://i.ibb.co/BKjgVsRX/Screenshot-20260115-233328-Whats-App.jpg" style="top: 10%; right: 10%;">
+        <img class="rose" src="https://www.21-draw.com/wp-content/uploads/2023/08/color-the-leaves-e1692607469362-1024x1020.jpg" style="bottom: 10%; left: 10%;">
     </div>
     """,
     unsafe_allow_html=True,
 )
-#<a href="https://imgbb.com/"><img src="https://i.ibb.co/zHsctgmG/Screenshot-20260115-231537-Spotify.jpg" alt="Screenshot-20260115-231537-Spotify" border="0" /></a>
-# Información adicional
+
+# 8. Información adicional
 st.markdown(
     """
     <div class="info info-left">Nos vemos mas tarde en Kabal</div>
