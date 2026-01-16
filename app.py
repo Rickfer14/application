@@ -65,7 +65,7 @@ with st.spinner("Cargando..."):
     time.sleep(3)  # Simula una carga de 3 segundos
 
 # Función para simular la escritura en vivo
-def typewriter(text, delay=0.6):
+def typewriter(text, delay=0.1):
     placeholder = st.empty()
     for i in range(len(text) + 1):
         placeholder.markdown(f"<div class='main-text'>{text[:i]}</div>", unsafe_allow_html=True)
@@ -105,8 +105,8 @@ st.markdown(
 # Información adicional
 st.markdown(
     """
-    <div class="info info-left">Ubicación: Exposición de arte en Caracas</div>
-    <div class="info info-right">Fecha: Este sábado (sujeto a cambios posiblemente)</div>
+    <div class="info info-left">Nos vemos mas tarde en Kabal</div>
+    <div class="info info-right">Pasala bien!</div>
     """,
     unsafe_allow_html=True,
 )
