@@ -94,7 +94,7 @@ st.markdown(
         <!-- Rosa 1 (arriba a la izquierda) -->
         <img class="rose" src="https://i.ibb.co/zHsctgmG/Screenshot-20260115-231537-Spotify.jpg" alt="Rosa 1" style="top: 10%; left: 10%; width: 100px; height: 100px;">
         <!-- Rosa 2 (arriba a la derecha) -->
-        <img class="rose" src="https://www.21-draw.com/wp-content/uploads/2023/08/color-the-leaves-e1692607469362-1024x1020.jpg" alt="Rosa 2" style="top: 10%; right: 10%; width: 100px; height: 100px;">
+        <img class="rose" src="https://i.ibb.co/BKjgVsRX/Screenshot-20260115-233328-Whats-App.jpg" alt="Rosa 2" style="top: 10%; right: 10%; width: 100px; height: 100px;">
         <!-- Rosa 3 (abajo a la izquierda) -->
         <img class="rose" src="https://www.21-draw.com/wp-content/uploads/2023/08/color-the-leaves-e1692607469362-1024x1020.jpg" alt="Rosa 3" style="bottom: 10%; left: 10%; width: 100px; height: 100px;">
     </div>
