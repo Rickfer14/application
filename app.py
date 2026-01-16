@@ -72,7 +72,7 @@ def typewriter(text, delay=0.1):
         time.sleep(delay)
 
 # Texto principal
-main_text = "Feliz cumpleaños Isabellita, te quiero mucho❤️"
+main_text = "Feliz cumpleaños Isabellita, ya son 19, te quiero mucho, eres tú y ya❤️"
 
 # Escribir el texto principal
 typewriter(main_text)
