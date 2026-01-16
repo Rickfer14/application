@@ -62,7 +62,7 @@ st.markdown(
 # 3. Música de YouTube (The Abyss - The Weeknd & Lana Del Rey)
 # Se muestra un reproductor pequeño para que ella pueda activar el sonido
 st.markdown("<div class='video-container'>", unsafe_allow_html=True)
-st.video("https://youtu.be/DZg-paVWkH4?si=84WpFZTBF4aMM_3L")
+st.video("https://youtu.be/YJ84U_30GRM?si=g7CILpIwEL2fX6tO")
 st.caption("dale plei para escuchar")
 st.markdown("</div>", unsafe_allow_html=True)
 
